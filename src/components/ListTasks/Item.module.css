@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.item {
+  display: flex;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: solid 1px var(--gray-400);
+  border-radius: 8px;
+  gap: 12px;
+}
+
+.task-not-completed {
+  color: var(--gray-200);
+  width: 100%;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  color: var(--gray-300);
+  width: 100%;
+}
+
+.container input [type="radio"] {
+  background: #ff8040;
+  border: none;
+  border-radius: 8px;
+  color: var(--gray-100);
+  font-size: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.icon-trash:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
