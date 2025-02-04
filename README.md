@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+ToDo List - Ignite ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sobre o projeto
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação de controle de tarefas desenvolvida em ReactJS como parte do primeiro desafio do Ignite da Rocketseat. O objetivo é consolidar conhecimentos fundamentais da biblioteca, como gerenciamento de estado, imutabilidade, componentização e manipulação de listas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades
 
-## Expanding the ESLint configuration
+Adicionar uma nova tarefa;
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Marcar e desmarcar tarefas como concluídas;
 
-- Configure the top-level `parserOptions` property like this:
+Remover uma tarefa da listagem;
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Exibir o progresso de conclusão das tarefas.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Tecnologias utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+ReactJS
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+TypeScript
+
+Vite
+
+CSS Modules
+
+Como executar o projeto
+
+Pré-requisitos
+
+Node.js instalado
+
+Gerenciador de pacotes (npm ou yarn)
+
+Passos para rodar a aplicação
+
+# Clone o repositório
+git clone https://github.com/seu-usuario/todo-list.git
+
+# Acesse a pasta do projeto
+cd todo-list
+
+# Instale as dependências
+yarn install # ou npm install
+
+# Execute o projeto
+yarn dev # ou npm run dev
+
+A aplicação estará disponível em http://localhost:5173.
+
+Layout
+
+O layout do projeto foi baseado no modelo disponibilizado no Figma.
+
+Aprendizados
+
+Este projeto reforçou conceitos essenciais do ReactJS, como:
+
+Estados e imutabilidade;
+
+Componentização;
+
+Manipulação de listas e chaves (map, filter, reduce);
+
+Comunicação entre componentes via props;
+
+Organização e boas práticas no desenvolvimento com ReactJS.
+
+Contribuição
+
+Caso queira contribuir com melhorias, sinta-se à vontade para abrir um Pull Request ou relatar um Issue.
+
+Licença
+
+Este projeto está sob a licença MIT.
